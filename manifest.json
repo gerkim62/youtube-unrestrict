@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube Unrestrict",
+  "version": "1.0.0",
+  "description": "Bypass 'This video is unavailable with Restricted Mode enabled' on youtube.",
+  "permissions": [],
+  "content_scripts": [
+    {
+    "matches": ["*://youtube.com/watch*", "*://*.youtube.com/watch*"],
+      "js": ["content.js"]
+    }
+  ]
+}
